@@ -15,7 +15,7 @@ const Menu = (props: IProps) => {
   const { name, subMenu, shouldShowIcon } = props;
   return (
     <div className="custom-menu">
-      <div className="group inline-block relative z-50">
+      <div className="group inline-block relative z-10">
         <button className="outline-none focus:outline-none px-3 py-1 bg-none rounded-sm flex items-center min-w-32">
           <span className="pr-1 flex-1 text-white">{name}</span>
           {shouldShowIcon && (
