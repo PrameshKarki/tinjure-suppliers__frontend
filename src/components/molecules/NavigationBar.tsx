@@ -7,6 +7,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
+import Link from "next/link";
 import { AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
 import CartButtonWithBadge from "../atoms/CartButtonWithBadge";
 import CartList from "./CartList";
@@ -15,9 +16,11 @@ const NavigationBar = () => {
   return (
     <Box className="px-40 py-1" bg={"white"}>
       <Flex alignItems={"center"}>
-        <Box width={300}>
-          <Image src={"/logo.png"} width={50} height={50} alt="Logo" />
-        </Box>
+        <Link href={"/"}>
+          <Box width={300}>
+            <Image src={"/logo.png"} width={50} height={50} alt="Logo" />
+          </Box>
+        </Link>
         <Box className="flex items-center">
           <InputGroup width={500}>
             <Input placeholder="Search Product" size="md" />
