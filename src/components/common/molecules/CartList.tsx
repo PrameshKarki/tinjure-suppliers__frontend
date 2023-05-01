@@ -15,7 +15,7 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
-import { colors } from "../../constants/colors";
+import { colors } from "../../../constants/colors";
 import CartListItem from "../atoms/CartListItem";
 
 interface IProps {

@@ -1,5 +1,5 @@
-import ProductDetails from "../../components/molecules/ProductDetails";
-import ProductsSection from "../../components/organisms/ProductsSection";
+import ProductDetails from "../../components/common/molecules/ProductDetails";
+import ProductsSection from "../../components/common/organisms/ProductsSection";
 
 const ProductDetailsPage = () => {
   return (

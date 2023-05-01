@@ -5,8 +5,8 @@ import {
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
 import Slider from "react-slick";
-import { ProductSchema } from "../../__generated__/graphql";
-import { productCarouselSettings } from "../../configs/corousel";
+import { ProductSchema } from "../../../__generated__/graphql";
+import { productCarouselSettings } from "../../../configs/corousel";
 import ProductCard from "../atoms/ProductCard";
 
 interface IProps {

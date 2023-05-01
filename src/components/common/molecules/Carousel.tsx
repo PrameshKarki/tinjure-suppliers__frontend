@@ -5,7 +5,7 @@ import {
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
 import Slider from "react-slick";
-import { settings } from "../../configs/corousel";
+import { settings } from "../../../configs/corousel";
 
 interface IProps {
   images: string[];

@@ -1,6 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import { acceptedPaymentMethods } from "../../constants/acceptedPaymentMethods";
+import { acceptedPaymentMethods } from "../../../constants/acceptedPaymentMethods";
 
 const AcceptedPaymentMethods = () => {
   return (

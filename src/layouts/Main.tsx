@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
-import Footer from "../components/molecules/Footer";
-import MenuBar from "../components/molecules/MenuBar";
-import NavigationBar from "../components/molecules/NavigationBar";
+import Footer from "../components/common/molecules/Footer";
+import MenuBar from "../components/common/molecules/MenuBar";
+import NavigationBar from "../components/common/molecules/NavigationBar";
 
 interface IProps {
   children: ReactNode;

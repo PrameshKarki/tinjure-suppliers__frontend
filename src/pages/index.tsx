@@ -1,9 +1,9 @@
-import BannerImage from "../components/atoms/Banner";
-import Banners from "../components/molecules/Banners";
-import Carousel from "../components/molecules/Carousel";
-import Categories from "../components/molecules/Categories";
-import ProductsCarouselSection from "../components/organisms/ProductsCarouselSection";
-import ProductsSection from "../components/organisms/ProductsSection";
+import BannerImage from "../components/common/atoms/Banner";
+import Banners from "../components/common/molecules/Banners";
+import Carousel from "../components/common/molecules/Carousel";
+import Categories from "../components/common/molecules/Categories";
+import ProductsCarouselSection from "../components/common/organisms/ProductsCarouselSection";
+import ProductsSection from "../components/common/organisms/ProductsSection";
 
 // *Temporary data
 const images = [

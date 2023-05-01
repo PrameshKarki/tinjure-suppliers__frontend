@@ -1,4 +1,4 @@
-import { ProductSchema } from "../../__generated__/graphql";
+import { ProductSchema } from "../../../__generated__/graphql";
 import SectionHeader from "../atoms/SectionHeader";
 import ProductCarousel from "../molecules/ProductsCarousel";
 

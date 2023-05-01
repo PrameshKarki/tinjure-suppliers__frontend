@@ -16,19 +16,27 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import { AiOutlineHeart } from "react-icons/ai";
-import { colors } from "../../constants/colors";
+import ReactImageMagnify from "react-image-magnify";
+import { colors } from "../../../constants/colors";
 import RatingBar from "../atoms/RatingBar";
+
 const ProductDetails = () => {
   return (
     <Flex my={6} px={20} gap={10}>
       <Stack>
         <Box width={500} height={500} position={"relative"}>
-          <Image
-            src={"/product.jpeg"}
-            fill
-            alt="Product Image"
-            style={{
-              objectFit: "contain",
+          <ReactImageMagnify
+            {...{
+              smallImage: {
+                alt: "Product Image",
+                src: "/product.jpeg",
+                isFluidWidth: true,
+              },
+              largeImage: {
+                src: "/product.jpeg",
+                width: 1200,
+                height: 900,
+              },
             }}
           />
         </Box>

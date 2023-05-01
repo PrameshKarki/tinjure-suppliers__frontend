@@ -1,6 +1,6 @@
 import { Box } from "@chakra-ui/react";
 import Image from "next/image";
-import { config } from "../../configs/site";
+import { config } from "../../../configs/site";
 
 interface IProps {
   src: string;
