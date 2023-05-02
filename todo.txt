@@ -1,0 +1,6 @@
+[+] Sticky Navigation
+[+] Auth Pages
+[+] Responsive design
+[+] Products Review
+[+] Searched Product Page design
+[+] Display Markdown
