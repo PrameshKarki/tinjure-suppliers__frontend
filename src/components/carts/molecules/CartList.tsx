@@ -14,6 +14,7 @@ import {
   Text,
   useDisclosure,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { ReactNode } from "react";
 import { colors } from "../../../constants/colors";
 import CartListItem from "../atoms/CartListItem";
@@ -23,6 +24,7 @@ interface IProps {
 }
 
 const CartList = (props: IProps) => {
+  const router = useRouter();
   const { triggerElement } = props;
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -62,6 +64,7 @@ const CartList = (props: IProps) => {
                 bg={colors.orange}
                 _hover={{ bg: colors.orange }}
                 height={9}
+                onClick={() => router.push("/carts")}
               >
                 View Cart
               </Button>
@@ -72,6 +75,7 @@ const CartList = (props: IProps) => {
                 textColor={"white"}
                 _hover={{ bg: colors.blue }}
                 height={9}
+                onClick={() => router.push("/checkout")}
               >
                 Checkout
               </Button>

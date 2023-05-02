@@ -8,11 +8,13 @@ import {
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
+import CartList from "../../carts/molecules/CartList";
 import CartButtonWithBadge from "../atoms/CartButtonWithBadge";
-import CartList from "./CartList";
 
 const NavigationBar = () => {
+  const router = useRouter();
   return (
     <Box className="px-40 py-1" bg={"white"}>
       <Flex alignItems={"center"}>
@@ -33,10 +35,12 @@ const NavigationBar = () => {
             className="flex items-center ml-3"
             color={"gray.600"}
             _hover={{ color: "black" }}
+            cursor={"pointer"}
+            onClick={() => router.push("/wishlists")}
           >
             <AiOutlineHeart size={20} />
             <Text ml={2} fontSize={15}>
-              Wishlist
+              Wishlists
             </Text>
           </Box>
           <CartList triggerElement={<CartButtonWithBadge count={5} />} />
