@@ -1,6 +1,6 @@
 import { Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
-import { CategorySchema } from "../../__generated__/graphql";
+import { CategorySchema } from "../../../__generated__/graphql";
 
 interface IProps {
   category?: CategorySchema;

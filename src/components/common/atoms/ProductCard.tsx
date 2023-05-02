@@ -1,7 +1,7 @@
 import { Badge, Box, Text } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
-import { ProductSchema } from "../../__generated__/graphql";
+import { ProductSchema } from "../../../__generated__/graphql";
 
 interface IProps {
   product?: ProductSchema;
