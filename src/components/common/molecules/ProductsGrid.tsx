@@ -1,13 +1,24 @@
 import { Grid } from "@chakra-ui/react";
 import ProductCard from "../atoms/ProductCard";
 
-const ProductsGrid = () => {
+interface IColumnCount {
+  base?: number;
+  md?: number;
+  lg?: number;
+}
+
+interface IProps {
+  column?: IColumnCount;
+}
+
+const ProductsGrid = (props: IProps) => {
+  const { column } = props;
   return (
     <Grid
       templateColumns={{
-        base: "repeat(1, 1fr)",
-        md: "repeat(2, 1fr)",
-        lg: "repeat(6, 1fr)",
+        base: `repeat(${column?.base ?? 1}, 1fr)`,
+        md: `repeat(${column?.md ?? 2}, 1fr)`,
+        lg: `repeat(${column?.lg ?? 6}, 1fr)`,
       }}
       gridGap={"20px 2px"}
     >
