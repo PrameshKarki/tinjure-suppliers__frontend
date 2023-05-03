@@ -1,5 +1,7 @@
 import {
   Box,
+  Card,
+  Checkbox,
   Flex,
   FormControl,
   FormLabel,
@@ -10,6 +12,7 @@ import {
   Text,
   VStack
 } from "@chakra-ui/react";
+import Image from "next/image";
 import React from "react";
 import { BsPerson } from "react-icons/bs";
 import { MdOutlineEmail } from "react-icons/md";
@@ -69,8 +72,20 @@ const Checkout = () => {
                     <Input type="text" size="md" />
                   </InputGroup>
                 </FormControl>
-               
               </VStack>
+              <Box>
+                <Text fontSize={20} mt={10}>
+                  Payment Method
+                </Text>
+                <Flex  pt={3}>
+                  <Card position={"relative"} border={"1px"} borderColor={"orange"}>
+                      <Checkbox colorScheme='orange' defaultChecked pos={"absolute"}  top={2} right={2}/>
+                  <Box width={180} height={120} >
+                    <Image src={"/cash_on_delivery.png"} fill  style={{objectFit:"contain"}} aria-label="Cash on Delivery"/>
+                    </Box>
+                  </Card>
+                </Flex>
+              </Box>
             </Box>
           </Box>
         </Stack>
