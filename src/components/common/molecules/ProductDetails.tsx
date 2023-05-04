@@ -96,13 +96,13 @@ const ProductDetails = () => {
             Sizes
           </Heading>
           <Flex gap={2}>
-            <Button variant={"outline"} cursor={"pointer"}>
+            <Button variant={"outline"} cursor={"pointer"} fontWeight={"thin"}>
               S
             </Button>
-            <Button variant={"outline"} cursor={"pointer"}>
+            <Button variant={"outline"} cursor={"pointer"} fontWeight={"thin"}>
               XXS
             </Button>
-            <Button variant={"outline"} cursor={"pointer"}>
+            <Button variant={"outline"} cursor={"pointer"} fontWeight={"thin"}>
               M
             </Button>
           </Flex>

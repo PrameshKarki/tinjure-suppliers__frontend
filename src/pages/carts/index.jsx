@@ -1,5 +1,6 @@
 import { Heading } from "@chakra-ui/react";
 import CartDetails from "../../components/carts/molecules/CartDetails";
+
 const Carts = ( ) => {
   return (
     <>

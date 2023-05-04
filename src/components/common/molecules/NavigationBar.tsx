@@ -1,15 +1,21 @@
 import {
   Box,
+  Button,
   Flex,
   Input,
   InputGroup,
   InputRightElement,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
   Text,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { AiOutlineHeart, AiOutlineSearch } from "react-icons/ai";
+import { HiOutlineUserCircle } from "react-icons/hi";
 import CartList from "../../carts/molecules/CartList";
 import CartButtonWithBadge from "../atoms/CartButtonWithBadge";
 
@@ -55,6 +61,25 @@ const NavigationBar = () => {
             </Text>
           </Box>
           <CartList triggerElement={<CartButtonWithBadge count={5} />} />
+          <Menu>
+            <MenuButton
+              as={Button}
+              rounded={"full"}
+              variant={"link"}
+              cursor={"pointer"}
+              minW={0}
+              ml={10}
+              zIndex={100}
+            >
+              <HiOutlineUserCircle size={25} />
+            </MenuButton>
+            <MenuList zIndex={150}>
+              <MenuItem onClick={() => router.push("/profile")}>
+                Profile
+              </MenuItem>
+              <MenuItem>Logout</MenuItem>
+            </MenuList>
+          </Menu>
         </Box>
       </Flex>
     </Box>
