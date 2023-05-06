@@ -4,7 +4,7 @@ import { acceptedPaymentMethods } from '../../../constants/acceptedPaymentMethod
 
 const AcceptedPaymentMethods = () => {
   return (
-    <Flex background={'white'} justifyContent={'center'} alignItems={'center'} py={2} gap={20}>
+    <Flex justifyContent={'center'} alignItems={'center'} py={2} gap={20}>
       <Text>We Accept</Text>
       <Flex>
         {acceptedPaymentMethods.map((el, index) => {
