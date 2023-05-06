@@ -1,27 +1,22 @@
-import { Badge, Box, Text } from "@chakra-ui/react";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { Badge, Box, Text } from '@chakra-ui/react'
+import { AiOutlineShoppingCart } from 'react-icons/ai'
 
 interface IProps {
-  count: number;
+  count: number
 }
 
 const CartButtonWithBadge = (props: IProps) => {
-  const { count } = props;
+  const { count } = props
   return (
-    <Box
-      className="flex items-center ml-3 relative"
-      color={"gray.600"}
-      _hover={{ color: "black" }}
-      cursor={"pointer"}
-    >
+    <Box className='flex items-center ml-3 relative' color={'gray.600'} _hover={{ color: 'black' }} cursor={'pointer'}>
       {count > 0 && (
         <Badge
-          variant="subtle"
+          variant='subtle'
           p={1}
-          colorScheme="orange"
+          colorScheme='orange'
           fontSize={16}
-          position={"absolute"}
-          borderRadius={"full"}
+          position={'absolute'}
+          borderRadius={'full'}
           top={-3}
           right={-5}
         >
@@ -33,7 +28,7 @@ const CartButtonWithBadge = (props: IProps) => {
         Cart
       </Text>
     </Box>
-  );
-};
+  )
+}
 
-export default CartButtonWithBadge;
+export default CartButtonWithBadge

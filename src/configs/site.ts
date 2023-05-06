@@ -1,3 +1,3 @@
 export const config = {
-    bannerHeight: 300,
+  bannerHeight: 300,
 }

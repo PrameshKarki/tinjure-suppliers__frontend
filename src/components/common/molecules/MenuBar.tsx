@@ -1,38 +1,38 @@
-import { Box } from "@chakra-ui/react";
-import Menu from "../atoms/Menu";
+import { Box } from '@chakra-ui/react'
+import Menu from '../atoms/Menu'
 const menu = {
-  name: "Programming",
+  name: 'Programming',
   subMenu: [
     {
-      name: "Languages",
+      name: 'Languages',
     },
     {
-      name: "Languages",
+      name: 'Languages',
       subMenu: [
         {
-          name: "Javascript",
+          name: 'Javascript',
           subMenu: [
             {
-              name: "2.7",
+              name: '2.7',
             },
             {
-              name: "3+",
+              name: '3+',
             },
           ],
         },
       ],
     },
   ],
-};
+}
 const MenuBar = () => {
   return (
     <Box
-      className="bg-astronaut-900"
+      className='bg-astronaut-900'
       height={10}
-      display={"flex"}
+      display={'flex'}
       gap={2}
-      justifyContent={"center"}
-      alignItems={"center"}
+      justifyContent={'center'}
+      alignItems={'center'}
     >
       <Menu {...menu} />
       <Menu {...menu} />
@@ -42,7 +42,7 @@ const MenuBar = () => {
       <Menu {...menu} />
       <Menu {...menu} />
     </Box>
-  );
-};
+  )
+}
 
-export default MenuBar;
+export default MenuBar

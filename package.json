@@ -9,7 +9,9 @@
     "lint": "next lint",
     "codegen": "graphql-codegen --config codegen.ts",
     "compile": "graphql-codegen",
-    "watch": "graphql-codegen -w"
+    "watch": "graphql-codegen -w",
+    "format": "npx prettier --write ./src",
+    "format:check": "npx prettier --check ./src"
   },
   "dependencies": {
     "@apollo/client": "^3.7.13",

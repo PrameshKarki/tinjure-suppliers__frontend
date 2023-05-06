@@ -1,5 +1,5 @@
-import { Flex } from "@chakra-ui/react";
-import BannerItem from "../atoms/BannerItem";
+import { Flex } from '@chakra-ui/react'
+import BannerItem from '../atoms/BannerItem'
 
 const Banners = () => {
   return (
@@ -8,7 +8,7 @@ const Banners = () => {
       <BannerItem />
       <BannerItem />
     </Flex>
-  );
-};
+  )
+}
 
-export default Banners;
+export default Banners

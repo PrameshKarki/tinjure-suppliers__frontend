@@ -1,25 +1,20 @@
-import { Box } from "@chakra-ui/react";
-import Image from "next/image";
-import { config } from "../../../configs/site";
+import { Box } from '@chakra-ui/react'
+import Image from 'next/image'
+import { config } from '../../../configs/site'
 
 interface IProps {
-  src: string;
+  src: string
 }
 
 const BannerImage = (props: IProps) => {
-  const { src } = props;
+  const { src } = props
   return (
     <>
-      <Box w={"100%"} h={config.bannerHeight} position={"relative"} my={7}>
-        <Image
-          src={src}
-          fill
-          alt="Offer Banner"
-          style={{ objectFit: "cover" }}
-        />
+      <Box w={'100%'} h={config.bannerHeight} position={'relative'} my={7}>
+        <Image src={src} fill alt='Offer Banner' style={{ objectFit: 'cover' }} />
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default BannerImage;
+export default BannerImage

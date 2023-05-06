@@ -1,6 +1,6 @@
-import AcceptedPaymentMethods from "../atoms/AcceptedPaymentMethods";
-import Copyright from "../atoms/Copyright";
-import Links from "../atoms/Links";
+import AcceptedPaymentMethods from '../atoms/AcceptedPaymentMethods'
+import Copyright from '../atoms/Copyright'
+import Links from '../atoms/Links'
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
       <AcceptedPaymentMethods />
       <Copyright />
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
