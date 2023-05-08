@@ -23,7 +23,7 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
   )
 }
 
-const SocialButton = ({ children, label, href }: { children: ReactNode; label: string; href: string }) => {
+const SocialButton = ({ children, label }: { children: ReactNode; label: string }) => {
   return (
     <chakra.button
       bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
@@ -31,8 +31,6 @@ const SocialButton = ({ children, label, href }: { children: ReactNode; label: s
       w={8}
       h={8}
       cursor={'pointer'}
-      as={'a'}
-      href={href}
       display={'inline-flex'}
       alignItems={'center'}
       justifyContent={'center'}
@@ -119,30 +117,32 @@ export default function Footer() {
         <GridItem>
           <Stack>
             <ListHeader>Contact us</ListHeader>
-            <Link href={'#'}>
+            <Box>
               Call :
               <a href='tel:9842473580' target='_blank'>
                 9849016737 /
               </a>
-              <a href='tel:9862012561'> 9862012561</a>
-            </Link>
-            <Link href={'#'}>
+              <a href='tel:9862012561' target='_blank'>
+                9862012561
+              </a>
+            </Box>
+            <Box>
               Email :
               <a href='mailto:info@tinjere.con' target='_blank'>
                 info@Tinjure.com
               </a>
-            </Link>
-            <Link href={'#'}>
+            </Box>
+            <Box>
               Email :
               <a href='mailto:support@tinjere.con' target='_blank'>
                 support@Tinjure.com
               </a>
-            </Link>
-            <Link href={'#'}>
+            </Box>
+            <Box>
               <a href='https://goo.gl/maps/EESWR781pmdNsbL56?coh=178573&entry=tt' target='_blank'>
                 Itahari-06, Sangit-Chowk near Sanima Bank, Sunsari
               </a>
-            </Link>
+            </Box>
           </Stack>
         </GridItem>
         <GridItem>
@@ -193,16 +193,16 @@ export default function Footer() {
         </Flex>
         <Center pt='5'>
           <Stack direction={'row'} spacing={6}>
-            <SocialButton label={'Twitter'} href={'#'}>
+            <SocialButton label={'Twitter'}>
               <FaTwitter />
             </SocialButton>
-            <SocialButton label={'YouTube'} href={'#'}>
+            <SocialButton label={'YouTube'}>
               <FaYoutube />
             </SocialButton>
-            <SocialButton label={'Instagram'} href={'#'}>
+            <SocialButton label={'Instagram'}>
               <FaInstagram />
             </SocialButton>
-            <SocialButton label={'tiktok'} href={'#'}>
+            <SocialButton label={'tiktok'}>
               <FaTiktok />
             </SocialButton>
           </Stack>
@@ -211,7 +211,7 @@ export default function Footer() {
         <Text pt={6} fontSize={'sm'} textAlign={'center'}>
           © 2023 Tinjure Suppliers. All rights reserved
         </Text>
-      </Box> 
+      </Box>
     </Box>
   )
 }
