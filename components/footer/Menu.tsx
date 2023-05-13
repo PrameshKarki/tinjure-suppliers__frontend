@@ -6,7 +6,7 @@ const Menu = () => {
     <div className='text-slate-300 grid lg:grid-cols-7 md:grid-cols-2 grid-cols-1 gap-10 border-b pb-7 border-b-gray-600 '>
       <div className='lg:col-span-3 md:col-span-2 col-span-1'>
         <div className='flex gap-3'>
-          <Image src='/assets/images/logo.png' alt='Google Play Badge' width={50} height={50} />
+          <Image src='/assets/icons/logo.png' alt='Google Play Badge' width={50} height={50} />
           <div>
             <h2 className='text-slate-100 text-[19px] font-[600] pb-1'>Tinjure Suppliers</h2>
             <p className='text-slate-100'>Itahari-06, Sangit-Chowk near Sanima Bank, Sunsari</p>
@@ -22,7 +22,7 @@ const Menu = () => {
         </p>
       </div>
       <div className='text-[15px]'>
-        <h2 className='text-slate-100 text-[17px] font-[600] pb-3'>Quick Links</h2>
+        <h2 className='text-slate-100 text-[17px] font-[600] pb-3'>Quick links</h2>
         <div className='flex flex-col gap-2'>
           <Link href={'#'} className='hover:text-slate-50'>
             Home
@@ -86,6 +86,29 @@ const Menu = () => {
             <Link href='https://goo.gl/maps/EESWR781pmdNsbL56?coh=178573&entry=tt' target='_blank'>
               Itahari-06, Sangit-Chowk near Sanima Bank, Sunsari
             </Link>
+          </div>
+        </div>
+      </div>
+      <div className='text-[15px] '>
+        <h2 className='text-slate-100 text-[17px] font-[600] pb-3'>Install App</h2>
+        <div className='flex flex-col gap-2'>
+          <div className='hover:text-slate-50'>
+            <Image
+              className='cursor-pointer border border-red-50 rounded-sm opacity-75 hover:opacity-100 transition ease-in-out delay-75'
+              src='/assets/icons/google-play-badge.png'
+              width={150}
+              height={100}
+              alt='google_play_badge'
+            />
+          </div>
+          <div className='hover:text-slate-50 '>
+            <Image
+              className='cursor-pointer border border-red-50 rounded-sm opacity-75 hover:opacity-100 transition ease-in-out delay-75'
+              src='/assets/icons/app-store-badge.png'
+              width={150}
+              height={100}
+              alt='app-store-badge'
+            />
           </div>
         </div>
       </div>

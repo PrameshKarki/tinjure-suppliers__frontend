@@ -1,5 +1,6 @@
-import Footer from '@components/footer/Footer'
-import Navbar from '@components/Navbar'
+import Footer from '@components/footer'
+import Navbar from '@components/navbar'
+import Cookie from '@components/utils/Cookie'
 import '@styles/globals.scss'
 import { Inter } from 'next/font/google'
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className={inter.className}>
         <Navbar />
         {children}
+        <Cookie />
         <Footer />
       </body>
     </html>
