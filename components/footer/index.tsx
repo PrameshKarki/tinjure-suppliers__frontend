@@ -1,4 +1,4 @@
-import Copyright from './Copyright' 
+import Copyright from './Copyright'
 import Menu from './Menu'
 import Newsletter from './Newsletter'
 
@@ -8,7 +8,7 @@ const Footer = () => {
       <div className='px-6 py-3 mx-auto'>
         <Menu />
         <Newsletter />
-        <Copyright />    
+        <Copyright />
       </div>
     </div>
   )

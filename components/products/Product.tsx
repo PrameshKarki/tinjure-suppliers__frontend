@@ -1,15 +1,9 @@
+import { IProduct } from '@interface/product'
 import Image from 'next/image'
+import Link from 'next/link'
 import { AiOutlineHeart } from 'react-icons/ai'
 
-export interface IProduct {
-  image: string
-  name: string
-  variants?: string[]
-  description?: string
-  price: number
-  originalPrice?: number
-}
-const Product = ({ image, name, originalPrice, variants, description, price }: IProduct) => {
+const Product = ({ id, image, name, originalPrice, variants, price }: IProduct) => {
   let discount
   if (originalPrice) {
     discount = Math.round(((originalPrice - price) / originalPrice) * 100)
@@ -17,7 +11,15 @@ const Product = ({ image, name, originalPrice, variants, description, price }: I
 
   return (
     <div className='border border-slate-100 bg-slate-50 h-100 relative'>
-      <div className=''>
+      <Link
+        href={{
+          pathname: '/product/overviews',
+          query: {
+            name: name?.replace(/[^\w\s]/gi, ''),
+            id: id,
+          },
+        }}
+      >
         <div className='relative overflow-hidden product_box'>
           <Image
             src={image}
@@ -63,7 +65,7 @@ const Product = ({ image, name, originalPrice, variants, description, price }: I
             )}
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   )
 }

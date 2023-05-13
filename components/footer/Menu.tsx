@@ -6,7 +6,13 @@ const Menu = () => {
     <div className='text-slate-300 grid lg:grid-cols-7 md:grid-cols-2 grid-cols-1 gap-10 border-b pb-7 border-b-gray-600 '>
       <div className='lg:col-span-3 md:col-span-2 col-span-1'>
         <div className='flex gap-3'>
-          <Image src='/assets/icons/logo.png' alt='Google Play Badge' width={50} height={50} />
+          <Image
+            src='/assets/icons/logo.png'
+            alt='Google Play Badge'
+            width={50}
+            height={50}
+            className='object-cover object-center'
+          />
           <div>
             <h2 className='text-slate-100 text-[19px] font-[600] pb-1'>Tinjure Suppliers</h2>
             <p className='text-slate-100'>Itahari-06, Sangit-Chowk near Sanima Bank, Sunsari</p>

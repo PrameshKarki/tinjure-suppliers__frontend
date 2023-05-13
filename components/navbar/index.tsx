@@ -23,8 +23,14 @@ const Navbar = () => {
             <div className='flex items-center justify-between  '>
               <div className='flex items-center aligns-center justify-between'>
                 <Link href='/'>
-                  <div className='flex gap-2 justify-start   align-bottom'>
-                    <Image width={30} height={50} src='/assets/icons/logo.png' alt='logo' />
+                  <div className='flex gap-2 justify-start align-bottom'>
+                    <Image
+                      src='/assets/icons/logo.png'
+                      alt='Google Play Badge'
+                      width={30}
+                      height={30}
+                      className='object-cover object-center'
+                    />
                     <h3 className='text-[20px] font-[700] text-[#c24a04]'>Tinjure Suppliers</h3>
                   </div>
                 </Link>
@@ -36,9 +42,9 @@ const Navbar = () => {
                         <path
                           d='M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z'
                           stroke='currentColor'
-                          stroke-width='2'
-                          stroke-linecap='round'
-                          stroke-linejoin='round'
+                          strokeWidth='2'
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
                         ></path>
                       </svg>
                     </span>
@@ -94,9 +100,9 @@ const Navbar = () => {
                         <path
                           d='M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z'
                           stroke='currentColor'
-                          stroke-width='2'
-                          stroke-linecap='round'
-                          stroke-linejoin='round'
+                          strokeWidth='2'
+                          strokeLinecap='round'
+                          strokeLinejoin='round'
                         ></path>
                       </svg>
                     </span>

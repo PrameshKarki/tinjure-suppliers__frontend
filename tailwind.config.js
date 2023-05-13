@@ -13,8 +13,8 @@ module.exports = {
       },
       colors: {
         'primary-orange': '#FF5722',
-        'dark-midnight-blue': "var(--dark-midnight-blue)",
-      }
+        'dark-midnight-blue': 'var(--dark-midnight-blue)',
+      },
     },
   },
   plugins: [],
