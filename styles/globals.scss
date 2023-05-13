@@ -61,3 +61,17 @@ a {
 ::-webkit-scrollbar-thumb {
   background: $dark_midnight_blue;
 }
+
+.product_box {
+  .wishlist {
+    @apply hidden transition ease-in-out delay-75 cursor-pointer;
+    &:hover {
+      @apply bg-slate-200;
+    }
+  }
+  &:hover {
+    .wishlist {
+      @apply flex;
+    }
+  }
+}

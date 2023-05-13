@@ -62,7 +62,7 @@ const Menu = () => {
         <h2 className='text-slate-100 text-[17px] font-[600] pb-3'>Contact us</h2>
         <div className='flex flex-col gap-2'>
           <div className='hover:text-slate-50'>
-            Call :
+            Call :&nbsp;
             <Link href='tel:9842473580' target='_blank'>
               9849016737 /
             </Link>
@@ -71,13 +71,13 @@ const Menu = () => {
             </a>
           </div>
           <div className='hover:text-slate-50'>
-            Email :
+            Email :&nbsp;
             <Link href='mailto:info@tinjere.con' target='_blank'>
               info@Tinjure.com
             </Link>
           </div>
           <div className='hover:text-slate-50'>
-            Email :
+            Email :&nbsp;
             <Link href='mailto:support@tinjere.con' target='_blank'>
               support@Tinjure.com
             </Link>

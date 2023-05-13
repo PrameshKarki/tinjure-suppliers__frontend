@@ -45,8 +45,8 @@ const Navbar = () => {
 
                     <input
                       type='text'
-                      className='lg:w-[40rem] w-full py-auto h-[38px] pl-10 pr-4 text-gray-700  border-solid border border-blue-600 rounded bg-slate-100
-                      hover:border-dark-midnight-blue focus:border-dark-midnight-blue active:border-dark-midnight-blue focus:outline-none placeholder:text-[14px] '
+                      className='lg:w-[40rem] w-full py-auto h-[38px] pl-10 pr-4 text-gray-700  border-solid border   rounded bg-slate-100
+                      hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200 focus:outline-none placeholder:text-[14px] '
                       placeholder='Search for product, brands and name'
                     />
                   </div>
@@ -69,19 +69,19 @@ const Navbar = () => {
                 <div className='flex flex-col lg:flex-row '>
                   <Link
                     href={'#'}
-                    className='flex gap-2  items-center my-2 text-sm leading-5 text-gray-800 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline lg:mx-4 lg:my-0'
+                    className='flex gap-2  items-center my-2 text-sm leading-5 text-gray-800 transition-colors duration-300 transform dark:text-gray-200 hover:text-violet-600 dark:hover:text-violet-400 hover:underline lg:mx-4 lg:my-0'
                   >
                     <AiOutlineHeart /> Wishlists
                   </Link>
                   <Link
                     href={'#'}
-                    className='flex gap-2  items-center my-2 text-sm leading-5 text-gray-800 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline lg:mx-4 lg:my-0'
+                    className='flex gap-2  items-center my-2 text-sm leading-5 text-gray-800 transition-colors duration-300 transform dark:text-gray-200 hover:text-violet-600 dark:hover:text-violet-400 hover:underline lg:mx-4 lg:my-0'
                   >
                     <AiOutlineShoppingCart /> Cart
                   </Link>
                   <Link
                     href={'#'}
-                    className='flex gap-2  items-center my-2 text-sm leading-5 text-gray-800 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline lg:mx-4 lg:my-0'
+                    className='flex gap-2  items-center my-2 text-sm leading-5 text-gray-800 transition-colors duration-300 transform dark:text-gray-200 hover:text-violet-600 dark:hover:text-violet-400 hover:underline lg:mx-4 lg:my-0'
                   >
                     <AiOutlineUser /> Profile
                   </Link>
@@ -103,8 +103,9 @@ const Navbar = () => {
 
                     <input
                       type='text'
-                      className='lg:w-[40rem] w-full py-auto h-[38px] pl-10 pr-4 text-gray-700   border-solid border border-blue-600 rounded 
-                      bg-slate-100 hover:border-dark-midnight-blue focus:border-dark-midnight-blue active:border-dark-midnight-blue focus:outline-none placeholder:text-[14px] '
+                      className='lg:w-[40rem] w-full py-auto h-[38px] pl-10 pr-4 text-gray-700    
+                      border-solid border   rounded bg-slate-100
+                      hover:bg-slate-200 focus:bg-slate-200 active:bg-slate-200 focus:outline-none placeholder:text-[14px] '
                       placeholder='Search for product, brands and name'
                     />
                   </div>
@@ -117,7 +118,7 @@ const Navbar = () => {
               {menu?.map((item, index: number) => {
                 return (
                   <Link
-                    className='mr-4 text-sm leading-5 capitalize font-[500] text-gray-800 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 hover:underline lg:my-0'
+                    className='mr-4 text-sm leading-5 capitalize font-[500] text-gray-800 transition-colors duration-300 transform dark:text-gray-200 hover:text-violet-600 dark:hover:text-violet-400 hover:underline lg:my-0'
                     href={item?.href}
                     key={index}
                   >
